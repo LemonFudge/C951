@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+      <!-- Greeting and Asking for User's Name -->
+  <category>
+    <pattern>HELLO</pattern>
+    <template>
+      Hello! I'm CareerCompanion, your guide to exploring computing careers. What's your name?
+    </template>
+  </category>
+  
+    <category>
+    <pattern>MY NAME IS *</pattern>
+    <template>
+      Nice to meet you, <star/>! How can I assist you today with your computing career journey?
+      <think><set name="username"><star/></set></think>
+    </template>
+  </category>
+  
+        <!-- Job Types -->
+  <category>
+    <pattern>WHAT DOES A SOFTWARE DEVELOPER DO</pattern>
+    <template>
+      A software developer designs, codes, and maintains applications or systems software. They work in various industries and typically need strong programming skills.
+      <srai>TELL ME MORE ABOUT SOFTWARE DEVELOPER</srai>
+    </template>
+  </category>
+  
+    <category>
+    <pattern>HOW DO I BECOME A SOFTWARE DEVELOPER</pattern>
+    <template>
+      To become a software developer, you typically need a degree in computer science or a related field, along with proficiency in programming languages such as Java, Python, or C++.
+      <srai>TELL ME MORE ABOUT SOFTWARE DEVELOPER</srai>
+    </template>
+  </category>
+  
+    <category>
+    <pattern>TELL ME MORE ABOUT SOFTWARE DEVELOPER</pattern>
+    <template>
+      Software developers can specialize in different areas, such as web development, mobile applications, or system-level software. They often work in teams and collaborate with designers, analysts, and other developers. Continuous learning and keeping up with the latest programming languages and tools are crucial in this field.
+    </template>
+  </category>
+  //
+  
+    <category>
+    <pattern>WHAT DOES A DATA SCIENTIST DO</pattern>
+    <template>
+      A data scientist analyzes and interprets complex data to help organizations make informed decisions. They use statistics, machine learning, and programming skills.
+      <srai>TELL ME MORE ABOUT DATA SCIENTIST</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>HOW DO I BECOME A DATA SCIENTIST</pattern>
+    <template>
+      To become a data scientist, you typically need a strong background in statistics, mathematics, and programming. A degree in a related field and experience with data analysis tools is also beneficial.
+      <srai>TELL ME MORE ABOUT DATA SCIENTIST</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>TELL ME MORE ABOUT DATA SCIENTIST</pattern>
+    <template>
+      Data scientists often work with big data, using tools like Python, R, and SQL to analyze and visualize data. They may also build predictive models using machine learning techniques. The role requires strong problem-solving skills and the ability to communicate findings effectively to non-technical stakeholders.
+    </template>
+  </category>
+  //
+  
+    <category>
+    <pattern>WHAT DOES A CYBERSECURITY ANALYST DO</pattern>
+    <template>
+      A cybersecurity analyst protects an organization's systems and networks from cyber threats by implementing security measures and monitoring for potential breaches.
+      <srai>TELL ME MORE ABOUT CYBERSECURITY ANALYST</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>HOW DO I BECOME A CYBERSECURITY ANALYST</pattern>
+    <template>
+      To become a cybersecurity analyst, you typically need knowledge of networking, information security principles, and experience with security tools and protocols.
+      <srai>TELL ME MORE ABOUT CYBERSECURITY ANALYST</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>TELL ME MORE ABOUT CYBERSECURITY ANALYST</pattern>
+    <template>
+      Cybersecurity analysts often work in high-pressure environments, responding to security incidents and conducting vulnerability assessments. They need to stay updated on the latest cyber threats and security technologies. Certifications such as CISSP, CEH, or CompTIA Security+ can enhance job prospects.
+    </template>
+  </category>
+  //
+  
+    <category>
+    <pattern>WHAT DOES A SYSTEMS ADMINISTRATOR DO</pattern>
+    <template>
+      A systems administrator manages and maintains an organization's IT infrastructure, ensuring that servers, networks, and systems operate efficiently and securely.
+      <srai>TELL ME MORE ABOUT SYSTEMS ADMINISTRATOR</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>HOW DO I BECOME A SYSTEMS ADMINISTRATOR</pattern>
+    <template>
+      To become a systems administrator, you typically need a background in IT or computer science, with knowledge of operating systems, networking, and server management.
+      <srai>TELL ME MORE ABOUT SYSTEMS ADMINISTRATOR</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>TELL ME MORE ABOUT SYSTEMS ADMINISTRATOR</pattern>
+    <template>
+      Systems administrators often manage a variety of tasks, including server configurations, network management, and troubleshooting issues. They need to be familiar with operating systems like Windows, Linux, and Unix, and may also work with cloud computing environments.
+    </template>
+  </category>
+  //
+  
+    <category>
+    <pattern>WHAT DOES A UX UI DESIGNER DO</pattern>
+    <template>
+      A UX/UI designer creates user-friendly interfaces that improve the overall user experience for digital products like websites and applications.
+      <srai>TELL ME MORE ABOUT UX UI DESIGNER</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>HOW DO I BECOME A UX UI DESIGNER</pattern>
+    <template>
+      To become a UX/UI designer, you typically need a background in graphic design, user research, and a strong understanding of design principles and tools like Adobe XD or Figma.
+      <srai>TELL ME MORE ABOUT UX UI DESIGNER</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>TELL ME MORE ABOUT UX UI DESIGNER</pattern>
+    <template>
+      UX/UI designers need to balance aesthetics with functionality, often collaborating with developers to ensure designs are implemented correctly. Understanding user behavior and conducting usability testing are key aspects of the role.
+    </template>
+  </category>
+  //
+  
+    <category>
+    <pattern>PICK A COMPUTING JOB FOR ME</pattern>
+    <template>
+      <random>
+        <li><srai>SOFTWARE DEVELOPER JOB INFO</srai></li>
+        <li><srai>DATA SCIENTIST JOB INFO</srai></li>
+        <li><srai>CYBERSECURITY ANALYST JOB INFO</srai></li>
+        <li><srai>SYSTEMS ADMINISTRATOR JOB INFO</srai></li>
+        <li><srai>UX UI DESIGNER JOB INFO</srai></li>
+      </random>
+    </template>
+  </category>
+  
+    <!-- Individual Job Information Categories -->
+
+  <category>
+    <pattern>SOFTWARE DEVELOPER JOB INFO</pattern>
+    <template>
+      How about a software developer, they designs, codes, and maintains applications or systems software. They work in various industries and typically need strong programming skills.
+      <srai>TELL ME MORE ABOUT SOFTWARE DEVELOPER</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>DATA SCIENTIST JOB INFO</pattern>
+    <template>
+      How about a data scientist, they analyzes and interprets complex data to help organizations make informed decisions. They use statistics, machine learning, and programming skills.
+      <srai>TELL ME MORE ABOUT DATA SCIENTIST</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>CYBERSECURITY ANALYST JOB INFO</pattern>
+    <template>
+      How about a cybersecurity analyst, they protects an organization's systems and networks from cyber threats by implementing security measures and monitoring for potential breaches.
+      <srai>TELL ME MORE ABOUT CYBERSECURITY ANALYST</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>SYSTEMS ADMINISTRATOR JOB INFO</pattern>
+    <template>
+      How about a systems administrator, they manages and maintains an organization's IT infrastructure, ensuring that servers, networks, and systems operate efficiently and securely.
+      <srai>TELL ME MORE ABOUT SYSTEMS ADMINISTRATOR</srai>
+    </template>
+  </category>
+
+  <category>
+    <pattern>UX UI DESIGNER JOB INFO</pattern>
+    <template>
+      How about a UX/UI designer, they creates user-friendly interfaces that improve the overall user experience for digital products like websites and applications.
+      <srai>TELL ME MORE ABOUT UX UI DESIGNER</srai>
+    </template>
+  </category>
+  
+<category>
+    <pattern></pattern>
+    <template></template>
+</category>
+</aiml>
